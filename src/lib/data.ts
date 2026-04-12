@@ -130,7 +130,7 @@ export const photos = [
   { id: 1, src: "/photos/image13.jpeg", caption: "A beautiful memory" },
   { id: 2, src: "/photos/image10.jpeg", caption: "Always smiling" },
   { id: 3, src: "/photos/image8.jpeg", caption: "Unforgettable moments" },
-  { id: 4, src: "/photos/image20.jpeg", caption: "Family time" },
+  { id: 4, src: "/photos/image21.jpeg", caption: "Family time" },
   { id: 5, src: "/photos/image15.jpeg", caption: "Pure joy" },
 ]
 
