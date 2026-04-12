@@ -90,15 +90,15 @@ export const memories = [
     date: "The safest place I've ever known",
     description: "From the very beginning, your arms were home. Safe, warm, and unconditionally mine. A feeling I'll carry forever.",
     color: "#FFD6E0",
-    src: "/photos/image1.jpeg",
+    src: "/photos/image2.jpeg",
   },
   {
     id: 2,
-    title: "Your Kitchen Magic",
-    date: "Every meal, a masterpiece",
+    title: "coolest  Mummy",
+    date: "you always said yes",
     description: "The smell of your cooking is the smell of childhood, love, and everything good. No one will ever feed my soul the way you do.",
     color: "#E8D5F5",
-    src: "/photos/image2.jpeg",
+    src: "/photos/image12.jpeg",
   },
   {
     id: 3,
@@ -106,15 +106,15 @@ export const memories = [
     date: "You always listened",
     description: "Those quiet conversations — sometimes about nothing, sometimes about everything — are some of my most treasured memories.",
     color: "#F4A7B9",
-    src: "/photos/image3.jpeg",
+    src: "/photos/image7.jpeg",
   },
   {
     id: 4,
     title: "Your Strength",
-    date: "On the hardest days",
+    date: "most patient and lovable",
     description: "When everything fell apart, you held us all together. Quietly. Steadily. Beautifully. I don't know how you did it — but I'm so grateful you did.",
     color: "#FFD6E0",
-    src: "/photos/image4.jpeg",
+    src: "/photos/image11.jpeg",
   },
   {
     id: 5,
@@ -122,14 +122,35 @@ export const memories = [
     date: "My greatest gift",
     description: "Having you as my mother is the greatest gift life has given me. Every single memory I have of growing up is made better because you were there.",
     color: "#E8D5F5",
-    src: "/photos/image5.jpeg",
+    src: "/photos/image3.jpeg",
   },
 ];
 
 export const photos = [
-  { id: 1, src: "/photos/image1.jpeg", caption: "A beautiful memory" },
-  { id: 2, src: "/photos/image2.jpeg", caption: "Always smiling" },
-  { id: 3, src: "/photos/image3.jpeg", caption: "Unforgettable moments" },
-  { id: 4, src: "/photos/image4.jpeg", caption: "Family time" },
-  { id: 5, src: "/photos/image5.jpeg", caption: "Pure joy" },
+  { id: 1, src: "/photos/image13.jpeg", caption: "A beautiful memory" },
+  { id: 2, src: "/photos/image10.jpeg", caption: "Always smiling" },
+  { id: 3, src: "/photos/image8.jpeg", caption: "Unforgettable moments" },
+  { id: 4, src: "/photos/image14.jpeg", caption: "Family time" },
+  { id: 5, src: "/photos/image15.jpeg", caption: "Pure joy" },
 ]
+
+export const tinyLetters = [
+  {
+    id: 1,
+    author: "manddodri",
+    image: "/photos/image17.jpeg",
+    message: "My dearest mummy,It's hard to express my love for you verbally. You inspire me so much with your selfless and kind personality.  You are always there to lift us up and give us the push we need whenever we feel down. Can't ever be grateful enough for your Devine presence in my life.",
+  },
+  {
+    id: 2,
+    author: "munduru",
+    image: "/photos/image18.jpeg",
+    message: "HAPPY BIRTHDAY MUMMMYY i know i dont express it enough but i love you so much and i always will. Thanks for always having my back and supporting me in my tough times thanks more making me tomato soup during covid thanks for making me chings fried rice even though it made you work more in your hectic timetable. And i am sooo sorry for not helping you much with the household chores and all. I promise to be more helpful from now on. I love you so much  and please take care of your helath and knees mwaah",
+  },
+  {
+    id: 3,
+    author: "DD1",
+    image: "/photos/image11.jpeg",
+    message: "Happy Birthday madam Thank you for making my tiffin daily and for always supporting me. We are so lucky to have you in our lives.",
+  }
+];

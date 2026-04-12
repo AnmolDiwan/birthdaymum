@@ -88,11 +88,11 @@ export default function FinaleSection() {
             className="rounded-3xl p-8 md:p-12 mb-8"
             style={{ background: 'rgba(255,255,255,0.06)', backdropFilter: 'blur(10px)', border: '1px solid rgba(244,167,185,0.2)' }}>
             <p className="font-cormorant text-2xl md:text-4xl italic leading-relaxed" style={{ color: 'rgba(255,248,240,0.9)' }}>
-              "The world makes sense because of mothers like you."
+              "The world makes sense because you call me munduru everyday."
             </p>
             <div className="divider mt-6" />
             <p className="font-lora text-base italic mt-4" style={{ color: 'rgba(244,167,185,0.6)' }}>
-              May you always know how deeply, endlessly loved you are. 💖
+              May you always know how deeply, endlessly loved you are by each one of us. 💖
             </p>
           </motion.div>
 

@@ -15,6 +15,7 @@ import MemoryLaneSection from '@/components/sections/MemoryLaneSection'
 import PhotoGallery from '@/components/sections/PhotoGallery'
 import WishSection from '@/components/sections/WishSection'
 import FinaleSection from '@/components/sections/FinaleSection'
+import MiniLettersSection from '@/components/sections/MiniLettersSection'
 
 export default function Home() {
   const [entered, setEntered] = useState(false)
@@ -105,6 +106,17 @@ export default function Home() {
           />
 
           <MemoryLaneSection />
+
+          {/* MiniLettersSection separator */}
+          <div
+            className="relative z-[1]"
+            style={{
+              height: '60px',
+              background: 'linear-gradient(180deg, #FFF8F0 0%, #FFF8F0 100%)',
+            }}
+          />
+
+          <MiniLettersSection />
 
           {/* PhotoGallery (cream → blush → lavender) */}
           <div
