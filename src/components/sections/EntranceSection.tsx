@@ -140,7 +140,7 @@ export default function EntranceSection({ onEnter }: EntranceProps) {
                 animate={{ y: [0, -8, 0] }}
                 transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
               >
-                Maa
+                Mummy
               </motion.div>
               <motion.div
                 className="font-cormorant text-sm tracking-[0.4em] uppercase"

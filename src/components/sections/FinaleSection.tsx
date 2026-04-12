@@ -68,7 +68,7 @@ export default function FinaleSection() {
           {/* Main text */}
           <motion.h2 className="font-playfair text-5xl md:text-8xl font-bold mb-4 leading-tight shimmer-text"
             animate={{ scale: [1, 1.01, 1] }} transition={{ repeat: Infinity, duration: 4 }}>
-            Happy Birthday,<br />Maa
+            Happy Birthday,<br />Mummy
           </motion.h2>
 
           {/* Sparkles row */}

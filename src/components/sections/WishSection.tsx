@@ -208,7 +208,7 @@ export default function WishSection() {
                 }} />
               ))}
               <div className="absolute bottom-3 left-0 right-0 flex justify-center">
-                <span className="font-dancing text-white/90 text-2xl font-bold tracking-wider drop-shadow-md"> Maa ✨ </span>
+                <span className="font-dancing text-white/90 text-2xl font-bold tracking-wider drop-shadow-md"> Mummy ✨ </span>
               </div>
             </div>
 

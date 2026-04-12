@@ -230,7 +230,7 @@ export default function ConstellationSection() {
             written in the stars
           </motion.p>
           <h2 className="font-playfair text-4xl md:text-6xl font-bold mb-4" style={{ color: '#FFF8F0' }}>
-            The Universe of <span className="shimmer-text">Maa</span>
+            The Universe of <span className="shimmer-text">Mummy</span>
           </h2>
           <p className="font-lora text-base italic max-w-lg mx-auto" style={{ color: 'rgba(244,167,185,0.7)' }}>
             Every star is a piece of who she is. Hover to discover.

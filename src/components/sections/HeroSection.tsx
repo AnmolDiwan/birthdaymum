@@ -171,7 +171,7 @@ export default function HeroSection() {
             >
               Happy <br className="md:hidden"/> Birthday,
               <br />
-              <span className="shimmer-text block mt-2">Maa</span>
+              <span className="shimmer-text block mt-2">Mummy</span>
             </motion.h1>
           </div>
 

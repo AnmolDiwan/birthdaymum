@@ -27,7 +27,7 @@ export default function PhotoGallery() {
             A Lifetime of Love
           </h2>
           <p className="font-lora text-base italic max-w-lg mx-auto mb-2" style={{ color: 'var(--mauve)', opacity: 0.8 }}>
-            "Every photo captures a piece of your beautiful soul. Thank you for everything, Maa."
+            "Every photo captures a piece of your beautiful soul. Thank you for everything, Mummy."
           </p>
 
         </motion.div>
