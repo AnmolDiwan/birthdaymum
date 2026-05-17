@@ -1,6 +1,6 @@
-# 🌸 Sneha's Birthday Website
+# 🌸 Mum's Birthday Website
 
-A cinematic, interactive birthday journey built with Next.js 14, Framer Motion, and GSAP.
+A cinematic, interactive birthday journey built with Next.js 14, Framer Motion, and GSAP — crafted with love for the most special person in the world.
 
 ---
 
@@ -27,58 +27,83 @@ All personalized text is in ONE file:
 src/lib/data.ts
 ```
 
-- **`snehaTraits`** — her personality traits (constellation section)
+- **`snehaTraits`** — personality traits shown in the heart constellation section
 - **`loveNotes`** — things you love about her (envelope cards)
-- **`memories`** — your shared memories (polaroid section)
-- **`quizQuestions`** — the personality quiz
-- **`letter`** — your heartfelt closing letter
+- **`memories`** — shared memories (polaroid cards with photos)
 - **`photos`** — photo gallery array
+- **`tinyLetters`** — mini letters written by family members (Manddodri, Munduru, DD1)
 
 ### 📸 Adding Photos
 1. Drop your photos into `/public/photos/`
 2. Update the `photos` array in `src/lib/data.ts`:
 ```ts
 export const photos = [
-  { id: 1, src: '/photos/photo1.jpg', alt: 'Memory 1', caption: 'Our first adventure ✨' },
-  { id: 2, src: '/photos/photo2.jpg', alt: 'Memory 2', caption: 'This day 💕' },
+  { id: 1, src: '/photos/image13.jpeg', caption: 'A beautiful memory' },
+  { id: 2, src: '/photos/image10.jpeg', caption: 'Always smiling' },
   // ... add all your photos
 ]
 ```
-3. Also update `PhotoGallery.tsx` to use Next.js `<Image>` instead of the placeholder div.
+3. Also update the `memories` and `tinyLetters` arrays if you change image filenames.
 
 ### 🎵 Adding Music
 1. Download a royalty-free track from [Pixabay](https://pixabay.com/music/) or [Uppbeat](https://uppbeat.io)
 2. Save it as `/public/music/background.mp3`
 3. The music button will work automatically
 
-### 💌 Writing the Letter
-In `src/lib/data.ts`, find the `letter` object and replace the placeholder paragraphs:
+### 💌 Adding Mini Letters
+In `src/lib/data.ts`, find the `tinyLetters` array and add or edit entries:
 ```ts
-export const letter = {
-  salutation: "My dearest Sneha,",
-  paragraphs: [
-    "Your actual first paragraph here...",
-    "Your second paragraph...",
-    "Your third paragraph...",
-    "Your closing line...",
-  ],
-  closing: "With all my love,",
-  signature: "[ Your Name ]",  // ← Replace with your name
-}
+export const tinyLetters = [
+  {
+    id: 1,
+    author: "manddodri",
+    image: "/photos/image17.jpeg",
+    message: "My dearest mummy, ...",
+  },
+  // ... add more letters from family/friends
+]
 ```
 
-### 🧠 Adding Memories
-In `src/lib/data.ts`, update the `memories` array:
+### ⭐ Editing Constellation Traits
+In `src/lib/data.ts`, update the `snehaTraits` array to change the heart constellation points:
+```ts
+export const snehaTraits = [
+  {
+    id: 1,
+    label: "Love Like No Other",
+    description: "Your love is unconditional...",
+    emoji: "💖",
+    x: 50, y: 88,  // position on the heart shape (percentage)
+  },
+  // ...
+]
+```
+
+### 💕 Editing Love Notes (Envelope Cards)
+```ts
+export const loveNotes = [
+  {
+    id: 1,
+    title: "Your Sacrifices",
+    note: "You gave up so much...",
+    emoji: "🌹",
+  },
+  // ...
+]
+```
+
+### 🧠 Editing Memory Polaroids
 ```ts
 export const memories = [
   {
     id: 1,
-    title: "The Rained-Out Picnic",
-    date: "July 2023",
-    description: "We planned it for weeks, it poured, and we ended up eating sandwiches in the car laughing for two hours.",
+    title: "In Your Arms",
+    date: "The safest place I've ever known",
+    description: "From the very beginning...",
     color: "#FFD6E0",
+    src: "/photos/image2.jpeg",
   },
-  // ... add more memories
+  // ...
 ]
 ```
 
@@ -114,7 +139,7 @@ npm install -D typescript @types/node @types/react @types/react-dom @types/canva
 1. Push your code to GitHub
 2. Go to [vercel.com](https://vercel.com) → Import project
 3. Select your repo → Deploy
-4. You get a live URL like `sneha-birthday.vercel.app`
+4. You get a live URL to share with Mum 🎉
 
 ### Netlify
 1. Run `npm run build`
@@ -125,33 +150,32 @@ npm install -D typescript @types/node @types/react @types/react-dom @types/canva
 ## 📁 Project Structure
 
 ```
-sneha-birthday/
+birthdaymum/
 ├── public/
 │   ├── music/
 │   │   └── background.mp3        ← Add your music here
 │   └── photos/
-│       └── photo1.jpg            ← Add your photos here
+│       └── image1.jpeg           ← Add your photos here
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx            ← Root layout
-│   │   └── page.tsx              ← Main page (assembles sections)
+│   │   └── page.tsx              ← Main page (assembles all sections)
 │   ├── components/
 │   │   ├── sections/
-│   │   │   ├── EntranceSection.tsx   ← Section 1: Dark entrance
-│   │   │   ├── HeroSection.tsx       ← Section 2: Birthday hero
-│   │   │   ├── ConstellationSection.tsx ← Section 3: Star traits
-│   │   │   ├── LoveNotesSection.tsx  ← Section 4: Envelope cards
-│   │   │   ├── MemoryLaneSection.tsx ← Section 5: Polaroids
-│   │   │   ├── PhotoGallery.tsx      ← Section 6: Photo gallery
-│   │   │   ├── QuizSection.tsx       ← Section 7: Personality quiz
-│   │   │   ├── WishSection.tsx       ← Section 8: Birthday cake
-│   │   │   ├── LetterSection.tsx     ← Section 9: The letter
-│   │   │   └── FinaleSection.tsx     ← Section 10: Grand finale
+│   │   │   ├── EntranceSection.tsx      ← Section 1: Cinematic dark entrance
+│   │   │   ├── HeroSection.tsx          ← Section 2: Birthday hero & confetti
+│   │   │   ├── ConstellationSection.tsx ← Section 3: Heart constellation traits
+│   │   │   ├── LoveNotesSection.tsx     ← Section 4: Envelope cards
+│   │   │   ├── MemoryLaneSection.tsx    ← Section 5: Polaroid memory cards
+│   │   │   ├── PhotoGallery.tsx         ← Section 6: Masonry photo gallery
+│   │   │   ├── MiniLettersSection.tsx   ← Section 7: Mini letters from family
+│   │   │   ├── WishSection.tsx          ← Section 8: Birthday cake & candles
+│   │   │   └── FinaleSection.tsx        ← Section 9: Confetti grand finale
 │   │   └── ui/
-│   │       ├── CustomCursor.tsx      ← Rose gold cursor
-│   │       ├── MusicPlayer.tsx       ← Music toggle button
-│   │       ├── ProgressBar.tsx       ← Scroll progress
-│   │       └── FallingPetals.tsx     ← Ambient petals
+│   │       ├── CustomCursor.tsx         ← Rose gold cursor
+│   │       ├── MusicPlayer.tsx          ← Music toggle button
+│   │       ├── ProgressBar.tsx          ← Scroll progress bar
+│   │       └── FallingPetals.tsx        ← Ambient falling petals
 │   ├── lib/
 │   │   └── data.ts               ← ⭐ ALL YOUR CONTENT GOES HERE
 │   └── styles/
@@ -166,14 +190,13 @@ sneha-birthday/
 ## ✨ Features
 
 - 🎬 Cinematic typewriter entrance with starfield
-- 🎊 Auto-confetti on load
-- ⭐ Interactive constellation map of her personality
+- 🎊 Auto-confetti burst on load
+- 💖 Interactive heart constellation map of her qualities
 - 💌 Envelope cards that open on tap
-- 📷 Flip polaroid memory cards
+- 📷 Flip polaroid memory cards with real photos
 - 🖼️ Masonry photo gallery with lightbox
-- 🧠 Personality quiz with animated results
-- 🎂 Interactive candle-blowing birthday cake
-- 📜 Typewriter letter reveal on scroll
+- 📝 Mini letters section — heartfelt messages from family
+- 🎂 Interactive birthday cake with blow-out candles
 - 👑 Confetti grand finale
 - 🌸 Falling petals ambient effect
 - 🎵 Soft background music toggle
@@ -182,16 +205,4 @@ sneha-birthday/
 - 🌊 Lenis smooth scrolling
 - 📱 Fully mobile responsive
 
----
-
-## 💡 Tips
-
-- **Mobile:** The site is fully responsive. Test on your phone before showing her.
-- **Music:** Get tracks from [Pixabay Music](https://pixabay.com/music/search/romantic%20piano/) — search "romantic piano"
-- **Photos:** Aim for portrait-orientation photos for the masonry gallery — they look best.
-- **Letter:** Write it raw and honest. Don't over-edit. The typewriter effect makes even simple words feel profound.
-- **Deployment:** Deploy to Vercel, send her the link with a simple "I made something for you 🌸"
-
----
-
-Made with 💕 for Sneha's birthday.
+Made with 💕 for Mum's birthday.
